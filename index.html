@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Guessing Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Word Guessing Game</h1>
+      <p class="subtitle">Guess the word before you run out of tries.</p>
+    </header>
+
+    <section class="game">
+      <div class="status">
+        <div class="score">
+          <span class="label">Score:</span>
+          <span id="score">0</span>
+        </div>
+        <div class="tries">
+          <span class="label">Remaining:</span>
+          <span id="tries">6</span>
+        </div>
+      </div>
+
+      <div class="word" id="word"></div>
+
+      <div class="controls">
+        <label for="guess">Your guess:</label>
+        <input id="guess" maxlength="1" autocomplete="off" />
+        <button id="submit">Guess</button>
+      </div>
+
+      <div class="info">
+        <p id="message">Type a letter and press Guess. Only A–Z letters are allowed.</p>
+        <p class="hint"><strong>Hint:</strong> you can press Enter after typing.</p>
+      </div>
+
+      <button id="reset" class="reset">New Word</button>
+    </section>
+
+    <footer class="footer">
+      <p>Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
